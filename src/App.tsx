@@ -456,7 +456,7 @@ function Planos() {
               ))}
             </ul>
             <a
-              href="https://pay.wiapy.com/"
+              href="https://pay.wiapy.com/6a34addd429e4f28412e259d"
               className="block text-center w-full py-3.5 rounded-xl border-2 border-gray-800 text-gray-800 font-bold text-sm hover:bg-gray-800 hover:text-white transition-colors duration-200"
             >
               QUERO O PLANO START
