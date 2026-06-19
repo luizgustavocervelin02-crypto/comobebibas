@@ -14,30 +14,33 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
     
-    <!-- Meta Pixel Code -->
+    <!-- Tracking Scripts (Optimized Loading) -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '3984436185116814');
-    fbq('track', 'PageView');
-    </script>
-    <!-- End Meta Pixel Code -->
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          // Meta Pixel Code
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '3984436185116814');
+          fbq('track', 'PageView');
 
-    <!-- UTMify Script -->
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      async
-      defer
-    ></script>
-    <!-- End UTMify Script -->
+          // UTMify Script
+          var utmScript = document.createElement('script');
+          utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+          utmScript.setAttribute('data-utmify-prevent-xcod-sck', '');
+          utmScript.setAttribute('data-utmify-prevent-subids', '');
+          utmScript.async = true;
+          utmScript.defer = true;
+          document.head.appendChild(utmScript);
+        }, 1000);
+      });
+    </script>
   </head>
   <body>
     <noscript><img height="1" width="1" style="display:none"

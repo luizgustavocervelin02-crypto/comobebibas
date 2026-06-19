@@ -211,10 +211,10 @@ function ProdutoPorDentro() {
 
 /* ─── section 8: datas comemorativas ──────────────────────── */
 const updateImages = [
-  '/images/updates/imagem-sao_joao.png',
-  '/images/updates/imagem_sao_joao-2.png',
-  '/images/updates/imagem_sao_joao_3.png',
-  '/images/updates/imagem_sao_joao_4.png',
+  '/images/updates/imagem-sao_joao.webp',
+  '/images/updates/imagem_sao_joao-2.webp',
+  '/images/updates/imagem_sao_joao_3.webp',
+  '/images/updates/imagem_sao_joao_4.webp',
   '/images/updates/imagem_copa.webp',
   '/images/updates/imagem_copa-2.webp',
   '/images/updates/imagem_copa-3.webp',
