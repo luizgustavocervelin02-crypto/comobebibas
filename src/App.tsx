@@ -116,11 +116,13 @@ function Headline() {
 function Mockup() {
   return (
     <section className="bg-white py-12 px-4">
-      <div className="max-w-2xl mx-auto">
-        <div className="rounded-2xl bg-gray-100 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center gap-2 text-gray-400 h-80 sm:h-96">
-          <ImageIcon size={32} />
-          <span className="text-sm font-medium text-center px-4">INSERIR MOCKUP PRINCIPAL DO COMBO BEBIDAS PRO</span>
-        </div>
+      <div className="max-w-2xl mx-auto flex justify-center">
+        <img
+          src="/images/main-mockup.webp"
+          alt="Combo Bebidas Pro Mockup"
+          className="w-full h-auto max-w-full rounded-2xl shadow-lg border border-gray-100"
+          loading="eager"
+        />
       </div>
     </section>
   );
