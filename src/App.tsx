@@ -120,6 +120,8 @@ function Mockup() {
         <img
           src="/images/main-mockup.webp"
           alt="Combo Bebidas Pro Mockup"
+          width={720}
+          height={540}
           className="w-full h-auto max-w-full rounded-2xl shadow-lg border border-gray-100"
           loading="eager"
         />
@@ -176,7 +178,7 @@ const showcaseItems = [
 function ShowcaseCard({ src }: { src: string }) {
   return (
     <div className="rounded-2xl overflow-hidden shadow-md ring-1 ring-black/5 w-full h-full">
-      <img src={src} alt="" className="w-full h-full object-cover" loading="lazy" />
+      <img src={src} alt="" width={200} height={356} className="w-full h-full object-cover" loading="lazy" />
     </div>
   );
 }
@@ -237,7 +239,7 @@ function DatasComemorativas() {
         <InfiniteCarousel aspect="story" itemWidth={200} gap={16}>
           {updateImages.map((src) => (
             <div key={src} className="relative rounded-2xl overflow-hidden shadow-md ring-1 ring-black/5 w-full" style={{ aspectRatio: '9 / 16' }}>
-              <img src={src} alt="" className="w-full h-full object-cover" loading="lazy" />
+              <img src={src} alt="" width={200} height={356} className="w-full h-full object-cover" loading="lazy" />
             </div>
           ))}
         </InfiniteCarousel>
@@ -317,7 +319,7 @@ function ClientesUtilizando() {
           <InfiniteCarousel aspect="testimonial" itemWidth={200} gap={16}>
             {testimonialImages.map((src) => (
               <div key={src} className="rounded-2xl overflow-hidden shadow-md ring-1 ring-black/5 w-full h-full bg-white">
-                <img src={src} alt="" className="w-full h-full object-contain" loading="lazy" />
+                <img src={src} alt="" width={200} height={410} className="w-full h-full object-contain" loading="lazy" />
               </div>
             ))}
           </InfiniteCarousel>
@@ -339,11 +341,11 @@ interface BonusData {
 }
 
 const bonusData: BonusData[] = [
-  { num: '01', label: 'Artes Destiladas', qty: '+55 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_32_59.png' },
-  { num: '02', label: 'Drink Mansão Maromba', qty: '+55 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_37_20.png' },
-  { num: '03', label: 'Combinações de Artes', qty: '+45 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_42_59.png' },
-  { num: '04', label: 'Artes ICES', qty: '+35 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_47_54.png' },
-  { num: '05', label: 'Artes Energéticas', qty: '+28 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_53_40.png' },
+  { num: '01', label: 'Artes Destiladas', qty: '+55 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_32_59.webp' },
+  { num: '02', label: 'Drink Mansão Maromba', qty: '+55 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_37_20.webp' },
+  { num: '03', label: 'Combinações de Artes', qty: '+45 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_42_59.webp' },
+  { num: '04', label: 'Artes ICES', qty: '+35 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_47_54.webp' },
+  { num: '05', label: 'Artes Energéticas', qty: '+28 artes', from: 'R$34,90', image: '/images/bonus/ChatGPT_Image_17_de_jun._de_2026,_23_53_40.webp' },
   { num: '06', label: 'Atualizações para Datas Comemorativas', qty: 'Vitalício', from: 'R$34,90', image: '/images/bonus/mockup-bonus.webp' },
 ];
 
@@ -355,6 +357,8 @@ function BonusCard({ bonus }: { bonus: BonusData }) {
         <img
           src={bonus.image}
           alt={bonus.label}
+          width={280}
+          height={280}
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
