@@ -455,9 +455,12 @@ function Planos() {
                 </li>
               ))}
             </ul>
-            <button className="w-full py-3.5 rounded-xl border-2 border-gray-800 text-gray-800 font-bold text-sm hover:bg-gray-800 hover:text-white transition-colors duration-200">
+            <a
+              href="https://pay.wiapy.com/"
+              className="block text-center w-full py-3.5 rounded-xl border-2 border-gray-800 text-gray-800 font-bold text-sm hover:bg-gray-800 hover:text-white transition-colors duration-200"
+            >
               QUERO O PLANO START
-            </button>
+            </a>
           </div>
 
           {/* Plano Pro */}
@@ -505,9 +508,12 @@ function Planos() {
                   Todos os bônus acima saem gratuitamente ao escolher o Combo Bebidas Pro.
                 </p>
 
-                <button className="w-full py-4 rounded-xl bg-green-500 hover:bg-green-400 active:bg-green-600 text-white font-extrabold text-base transition-all duration-200 shadow-lg shadow-black/40 hover:-translate-y-0.5">
+                <a
+                  href="https://pay.wiapy.com/6a34a5fbda80fafc34fa82b2"
+                  className="block text-center w-full py-4 rounded-xl bg-green-500 hover:bg-green-400 active:bg-green-600 text-white font-extrabold text-base transition-all duration-200 shadow-lg shadow-black/40 hover:-translate-y-0.5"
+                >
                   QUERO O COMBO BEBIDAS PRO
-                </button>
+                </a>
               </div>
             </div>
           </div>
